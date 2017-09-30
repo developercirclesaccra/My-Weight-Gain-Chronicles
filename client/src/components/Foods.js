@@ -6,34 +6,16 @@ class Foods extends Component {
       <div className="row">
         <div className="col-md-4">
           <div className="card">
-            <div className="header">
-              <h4 className="title">Lousy Bread</h4>
-            </div>
-            <div className="content">
-                I kinda like lousy bread...
-                <p><button className="btn btn-sm btn-round btn-primary">More</button></p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="card">
-            <div className="header">
-              <h4 className="title">Lousy Bread</h4>
-            </div>
-            <div className="content">
-                I kinda like lousy bread...
-                <p><button className="btn btn-sm btn-round btn-primary">More</button></p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="card">
-            <div className="header">
-              <h4 className="title">Lousy Bread</h4>
-            </div>
-            <div className="content">
-                I kinda like lousy bread...
-                <p><button className="btn btn-sm btn-round btn-primary">More</button></p>
+            <img className="card-img-top" src="../../public/assets/img/antoine-barres.jpg" alt=""  />
+            <div className="card-block">
+              <h4 className="card-title">Card title</h4>
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="" className="btn btn-primary">
+                Go somewhere
+              </a>
             </div>
           </div>
         </div>
@@ -42,4 +24,4 @@ class Foods extends Component {
   }
 }
 
-export default Foods
+export default Foods;
