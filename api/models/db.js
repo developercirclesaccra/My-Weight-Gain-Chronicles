@@ -18,3 +18,4 @@ mongoose.connection.on("disconnected", () => {
   console.log("Disconnected from", URI);
 });
 
+require('./Food');
