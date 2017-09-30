@@ -9,8 +9,13 @@ const sendJsonResponse = (res,status,content)=>{
 
 
 module.exports.add = async (req,res)=>{
-    const food = await  new Food(req.body).save();
+    const food = await new Food(req.body).save();
     sendJsonResponse(res,200,food);
 }
 
+
+module.exports.findAll = async (req,res)=>{
+    const foods = await Food.find();
+    sendJsonResponse(res,200,foods);
+}
 
