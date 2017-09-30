@@ -19,3 +19,8 @@ module.exports.findAll = async (req,res)=>{
     sendJsonResponse(res,200,foods);
 }
 
+module.exports.findOne = async (req, res)=>{
+    const food = await Food.findOne({_id : req.params.id});
+    if(!food) return next();
+    sendJsonResponse(res,200,food);
+}

@@ -7,5 +7,7 @@ const catchErrors = fn => {
   };
 };
 
-router.post("/add", foodController.add);
+router.post("/add", catchErrors(foodController.add));
+router.get("/posts", catchErrors(foodController.findAll));
+router.get("/post/:id", catchErrors(foodController.findOne));
 module.exports = router;
